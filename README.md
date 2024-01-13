@@ -1,4 +1,4 @@
-## Version 1.1 released!
+## Version 8.0 released!
 
 1. Support discontinuous binary, such as `0x11,0x22,??,??,0x33,0x66`
 2. Support offset, such as `0x11,0x22,0x33` but has offset 10
@@ -18,7 +18,7 @@ That was very easy.
 	Install-Package Myrmec
 ### Or DotNet cli ###
 	
-	dotnet add package Myrmec
+	dotnet add package Myrmec.Myrmec.net8
 
 ### Write code ###
 
@@ -77,7 +77,7 @@ The result is
 
 ## Api ducument ##
 
-[github pages](https://rocketrobin.github.io/myrmec-website/api/index.html)
+[github pages](https://github.com/mulgaBrian/myrmec.net8)
 
 ## Matedate source ##
 

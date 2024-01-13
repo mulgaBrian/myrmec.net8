@@ -5,7 +5,7 @@
 
 using System.Collections.Generic;
 
-namespace Myrmec
+namespace Myrmec.net8
 {
     /// <summary>
     /// node

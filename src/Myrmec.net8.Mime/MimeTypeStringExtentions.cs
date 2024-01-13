@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Myrmec.Mime
+namespace Myrmec.net8.Mime
 {
     public static class MimeTypeStringExtentions
     {

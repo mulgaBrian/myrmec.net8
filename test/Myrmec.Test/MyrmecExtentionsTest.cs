@@ -3,15 +3,14 @@
 // Licensed under the Apache v2 license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Myrmec.net8;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Myrmec.Test
 {
-    [TestClass]
+  [TestClass]
     public class MyrmecExtentionsTest
     {
         [TestMethod]

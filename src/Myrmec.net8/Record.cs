@@ -3,7 +3,7 @@
 // Licensed under the Apache v2 license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace Myrmec
+namespace Myrmec.net8
 {
     /// <summary>
     /// Present one record.
@@ -94,7 +94,7 @@ namespace Myrmec
         /// </summary>
         public bool IsComplexMetadata
         {
-            get => (Offset > 0) || (Hex.Contains("?"));
+            get => (Offset > 0) || Hex.Contains('?');
         }
     }
 }

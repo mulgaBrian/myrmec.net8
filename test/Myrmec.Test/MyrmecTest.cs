@@ -4,7 +4,8 @@
 // </copyright>
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Myrmec.Mime;
+using Myrmec.net8;
+using Myrmec.net8.Mime;
 using System.Linq;
 
 namespace Myrmec.Test

@@ -1,16 +1,13 @@
-﻿using Myrmec.Mime;
-using System;
-using System.Collections.Generic;
+﻿using Myrmec.net8.Mime;
 using System.Diagnostics;
-using System.Linq;
 using System.Text;
 
-namespace Myrmec
+namespace Myrmec.net8
 {
-    /// <summary>
-    /// MyrmecExtentions
-    /// </summary>
-    public static class MyrmecExtentions
+  /// <summary>
+  /// MyrmecExtentions
+  /// </summary>
+  public static class MyrmecExtentions
     {
         /// <summary>
         /// Add metadata into metadata list.
@@ -21,7 +18,7 @@ namespace Myrmec
         {
             var metadata = new Metadata()
             {
-                Extentions = record.Extentions.Split(',', ' ').ToList()
+                Extentions = [.. record.Extentions.Split(',', ' ')]
             };
             var hex = record.Hex;
             if (record.Offset > 0)
@@ -32,8 +29,8 @@ namespace Myrmec
 
             var lastCharIsQuestionMark = true;
 
-            var start = 0;
-            var count = 0;
+            int start = 0;
+            int count;
 
             for (int i = 0; i < byteStringArray.Length + 1; i++)
             {
@@ -95,8 +92,8 @@ namespace Myrmec
         /// <returns>Match result list.</returns>
         public static List<string> Match(this List<Metadata> list, byte[] data, bool matchAll = false)
         {
-            List<string> extentionStore = new List<string>(4);
-            foreach (var metatata in list)
+            List<string> extentionStore = new (4);
+            foreach (Metadata metatata in list)
             {
                 if (metatata.Match(data))
                 {
@@ -116,7 +113,7 @@ namespace Myrmec
         /// </summary>
         /// <param name="source"></param>
         /// <returns>Mime type name.</returns>
-        [Obsolete]
+        [Obsolete("Not sure why")]
         public static string MimeType(this string source)
         {
             return Mime.MimeType.GetMimeType(source);
@@ -129,7 +126,7 @@ namespace Myrmec
         /// <param name="records">Matadate record list.</param>
         public static void Populate(this Sniffer sniffer, IList<Record> records)
         {
-            foreach (var record in records)
+            foreach (Record record in records)
             {
                 sniffer.Add(record);
             }

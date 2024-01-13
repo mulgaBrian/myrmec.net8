@@ -6,7 +6,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Myrmec
+namespace Myrmec.net8
 {
     /// <summary>
     /// metadata
@@ -38,7 +38,7 @@ namespace Myrmec
         /// <returns>match result: matched or not.</returns>
         public bool Match(byte[] data)
         {
-            foreach (var offset in Offsets)
+            foreach (Offset offset in Offsets)
             {
                 if (data.Length < offset.Start + offset.Count)
                 {

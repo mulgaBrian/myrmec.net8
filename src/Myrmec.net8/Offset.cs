@@ -3,7 +3,7 @@
 // Licensed under the Apache v2 license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace Myrmec
+namespace Myrmec.net8
 {
     /// <summary>
     /// Representing a section of offset.

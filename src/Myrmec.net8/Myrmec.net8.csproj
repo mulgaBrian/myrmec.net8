@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>rocket robin</Authors>
+    <Company />
+    <Product>MyrmecSniffer</Product>
+    <Description>Myrmec is a library that used to identifie real file format type by detecting the file binary head with out file extention.</Description>
+    <Copyright>Copyright (c) Rocket Robin</Copyright>
+    <PackageProjectUrl>https://github.com/mulgaBrian/myrmec.net8</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mulgaBrian/myrmec.net8</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>file format,file type</PackageTags>
+    <PackageReleaseNotes>Myrmec is a library that used to identifie real file format type by detecting the file binary head with out file extention.</PackageReleaseNotes>
+  </PropertyGroup>
+
+
+
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>8.0.0.0</Version>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <FileVersion>8.0.0.0</FileVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>annotations</Nullable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageId>Myrmec.net8</PackageId>
+    <Title>Myrmec.net8</Title>
+  </PropertyGroup>
+
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\release\net7.0\Myrmec.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Myrmec.net8.Mime\Myrmec.net8.Mime.csproj" />
+  </ItemGroup>
+
+</Project>
