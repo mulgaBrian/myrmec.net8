@@ -1,13 +1,14 @@
 ## Version 8.0 released!
 
+Build for .Net 8 removing standard library dependancy
 1. Support discontinuous binary, such as `0x11,0x22,??,??,0x33,0x66`
 2. Support offset, such as `0x11,0x22,0x33` but has offset 10
 3. Obsolete `FileTypes.CommonFileTypes ` and instead with `FileTypes.Common`
 By the way: now fully support jpeg.
 
 
-## What is Myrmec ##
-Myrmec is a library that used to identifie real file format type by detecting the file binary head with out file extention like `xxxxx.png`.
+## What is Myrmec.net8 ##
+Myrmec.net8 is a library that used to identifie real file format type by detecting the file binary head with out file extention like `xxxxx.png`.
 
 ## How to use ##
 
@@ -75,9 +76,9 @@ The result is
 
 	image/png
 
-## Api ducument ##
+## Api document ##
 
-[github pages](https://github.com/mulgaBrian/myrmec.net8)
+[github pages](https://rocketrobin.github.io/myrmec-website/api/index.html)
 
 ## Matedate source ##
 
