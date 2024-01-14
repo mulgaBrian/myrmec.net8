@@ -16,7 +16,7 @@ That was very easy.
 
 ### Install from nuget ###
 
-	Install-Package Myrmec
+	Install-Package Myrmec.net8
 ### Or DotNet cli ###
 	
 	dotnet add package Myrmec.Myrmec.net8
