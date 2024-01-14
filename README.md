@@ -19,7 +19,7 @@ That was very easy.
 	Install-Package Myrmec.net8
 ### Or DotNet cli ###
 	
-	dotnet add package Myrmec.Myrmec.net8
+	dotnet add package Myrmec.net8
 
 ### Write code ###
 
